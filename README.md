@@ -1,12 +1,6 @@
 # System Monitor
 
-### Purdue CS252 - Fall 2023
-
 Sujal Timilsina (stimils)
-
-Alexandre Moraes (moraes)
-
-Josh Tseng (jstseng)
 
 ----
 ### Technologies Used
