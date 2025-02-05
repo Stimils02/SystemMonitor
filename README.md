@@ -1,6 +1,5 @@
 # System Monitor
 
-Sujal Timilsina (stimils)
 
 ----
 ### Technologies Used
