@@ -1,0 +1,8 @@
+#!/bin/bash
+
+./runClean
+rm config.pro
+rm systemmonitor
+qmake config.pro
+make
+./systemmonitor

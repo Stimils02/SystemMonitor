@@ -1,0 +1,5 @@
+#!/bin/bash
+
+# ./runClean
+make
+./systemmonitor

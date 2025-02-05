@@ -1,0 +1,12 @@
+include Makefile
+
+all: clean my_target mem_maps
+
+my_target:
+
+mem_maps:
+    mkdir -p memory_maps
+
+clean:
+    rm *.o 
+    rm -rf memory_maps/*

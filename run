@@ -1,0 +1,16 @@
+#!/bin/bash
+
+# g++ if you have c++ code
+# do linking here
+
+# compile and link
+g++ -g joshTest.cpp process.cpp system_info.cpp -o joshTest
+
+# remove all the contents of memory_maps
+rm -rf memory_maps/*
+
+./joshTest $1
+
+#sleep 2 
+
+#rm -rf memory_maps/*

@@ -1,0 +1,22 @@
+#!/bin/bash
+
+# must be given a PID
+PID=$1
+
+# get the initial values from /proc/PID/stat
+read -r utime stime <<< $(awk '{print $14, $15}' /proc/$PID/stat)
+total_time=$(($utime + $stime))
+
+
+# delay
+sleep 0.0001
+
+# get the updated values from /proc/PID/stat
+read -r utime_new stime_new <<< $(awk '{print $14, $15}' /proc/$PID/stat)
+total_time_new=$(($utime_new + $stime_new))
+
+# calculate CPU usage percentage
+cpu_usage=$((100 * ($total_time_new - $total_time) / 1))
+
+#echo "Process PID $PID CPU Usage: $cpu_usage%"
+echo $cpu_usage

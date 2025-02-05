@@ -1,0 +1,4 @@
+#!/bin/bash
+
+rm *.o 
+rm -rf memory_maps/*
